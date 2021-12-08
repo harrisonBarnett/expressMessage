@@ -1,0 +1,12 @@
+<p>Welcome to {{title}}</p>
+<a href='/new'>write a new post</a>
+
+<div class="message-list">
+    {{#each messages}}
+        <div class="message">
+            <div class="message-text">{{text}}</div>
+            <div class="message-user">- {{user}}</div>
+            <div class="message-timestamp">{{added}}</div>  
+        </div>
+    {{/each}}
+</div>

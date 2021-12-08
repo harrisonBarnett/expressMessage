@@ -1,0 +1,34 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+input {
+  border-bottom: 1px solid black;
+}
+button {
+  padding: .5em 1em;
+}
+.message-list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.message {
+  max-width: 400px;
+  border: 1px solid black;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.message-user {
+  margin-top: 1.2rem;
+  font-style: italic;
+}
+.message-timestamp {
+  margin-top: .25rem;
+  font-size: .6rem;
+}

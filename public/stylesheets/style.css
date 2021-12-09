@@ -7,11 +7,32 @@
   border: none;
   outline: none;
 }
+body {
+  position: relative;
+  min-height: 100vh;
+}
 input {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0,.25);
 }
 button {
   padding: .5em 1em;
+}
+.header {
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+.write-post-btn {
+  padding: .5rem;
+  background: rgba(75, 75, 75, 1);
+  color: white;
+}
+.write-post-btn:hover {
+  background: lightgray;
+  color: black;
 }
 .message-list {
   display: grid;
@@ -20,9 +41,9 @@ button {
 }
 .message {
   max-width: 400px;
-  border: 1px solid black;
   margin: 2rem 0;
   padding: 1rem;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.25);
 }
 .message-user {
   margin-top: 1.2rem;
@@ -31,4 +52,30 @@ button {
 .message-timestamp {
   margin-top: .25rem;
   font-size: .6rem;
+}
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+form {
+  width: 25%;
+  display: grid;
+  gap: 8px;
+  margin: 0 auto;
+}
+textarea {
+  resize: none;
+  border: 1px solid rgba(0,0,0,.25);
+}
+.back-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  padding: .5rem;
+  background: rgba(75, 75, 75, 1);
+  color: white;
+}
+.back-btn:hover {
+  background: lightgray;
+  color: black;
 }
